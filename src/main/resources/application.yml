@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: development
+
+---
+spring:
+  profiles: development
+
+logging:
+  level:
+    root: INFO
+
+recorder:
+  url: http://example.mocklab.io/recordables/123
+
+---
+
+spring:
+  profiles: test
+
+logging:
+  level:
+    root: INFO
+
+recorder:
+  url: http://localhost:9999/hello/get?name=santosh

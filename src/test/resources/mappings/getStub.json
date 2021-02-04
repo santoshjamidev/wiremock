@@ -1,0 +1,22 @@
+{
+  "request": {
+    "urlPath": "/hello/get",
+    "method": "GET",
+    "queryParameters": {
+      "name": {
+        "equalTo": "santosh"
+      }
+    }
+  },
+  "response": {
+    "fixedDelayMilliseconds": 1000,
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    },
+    "jsonBody": {
+      "message": "Hello With Params"
+    }
+  },
+  "priority": 1
+}
